@@ -1,3 +1,5 @@
+# کد افزودن فیلد اضافی به صفحات
+```
 function add_custom_filed_to_page() {
     $id = Params::getParam("id");
     $page = Page::newInstance()->findByPrimaryKey($id);
@@ -8,3 +10,4 @@ function add_custom_filed_to_page() {
     <?php
 }
 osc_add_hook('page_meta', 'add_custom_filed_to_page');
+```
